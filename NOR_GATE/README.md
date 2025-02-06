@@ -1,16 +1,6 @@
-This implements a CMOS NOR Gate in Cadence Virtuoso using GPDK 90nm Technology.
-
-Tools : Cadence Virtuoso
+This repository demonstrates the design and simulation of a **NOR Gate** using **Cadence Virtuoso**. It includes the **schematic, layout, testbench circuit, and output waveforms**. 
 
 Technology : Generic Process Design Kit 90nm
-
-Verification Tool : Assura
-
-LVS && DRC Cleared
-
-
-
-This repository demonstrates the design and simulation of a **NOR Gate** using **Cadence Virtuoso**. It includes the **schematic, layout, testbench circuit, and output waveforms**.  
 
 ## Table of Contents  
 - [Schematic](#schematic)  
