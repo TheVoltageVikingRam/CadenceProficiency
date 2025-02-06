@@ -31,21 +31,21 @@ The schematic of the NOR gate is designed using **Cadence Virtuoso**.
 ## Layout  
 The layout follows **design rules (DRC)** and has been verified for **LVS**.  
 
-![Layout](images/nor_layout.png)  
+![Layout](NOR_gate_Layout.png)  
 
 ---
 
 ## Testbench Circuit  
 The testbench is designed to verify the functionality of the NOR gate.  
 
-![Testbench](images/nor_testbench.png)  
+![Testbench](NOR_gate_simulation_circuit.png)  
 
 ---
 
 ## Simulation and Output Waveform  
 The waveform below shows the NOR gate's response to different input conditions.  
 
-![Output Waveform](images/nor_waveform.png)  
+![Output Waveform](NOR_Gate_Transient_Analysis.png)  
 
 ---
 
@@ -58,4 +58,4 @@ The waveform below shows the NOR gate's response to different input conditions.
 
 ## Author  
 **Ram Tripathi**  
-**Roll No: 22HEL2231**
+
