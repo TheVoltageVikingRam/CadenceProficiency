@@ -1,4 +1,4 @@
-#NOR gate design in Cadence Virtuoso 
+# NOR gate design in Cadence Virtuoso 
 
 This demonstrates the design and simulation of a **NOR Gate** using **Cadence Virtuoso**. It includes the **schematic, layout, testbench circuit, and output waveforms**. 
 
