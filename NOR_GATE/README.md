@@ -52,7 +52,7 @@ The waveform below shows the NOR gate's response to different input conditions.
 ## Tools Used  
 - **Cadence Virtuoso** – Schematic and Layout Design  
 - **Spectre Simulator** – Circuit Simulation  
-- **Assura / Calibre** – DRC & LVS Checks  
+- **Assura** – DRC & LVS Checks  
 
 ---
 
