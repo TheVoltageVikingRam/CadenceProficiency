@@ -24,7 +24,7 @@ This repository demonstrates the design and simulation of a **NOR Gate** using *
 ## Schematic  
 The schematic of the NOR gate is designed using **Cadence Virtuoso**.  
 
-![Schematic](NOR_GATE/CMOS_NOR.png)  
+![Schematic](CMOS_NOR.png)  
 
 ---
 
