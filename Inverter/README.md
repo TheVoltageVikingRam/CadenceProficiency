@@ -14,30 +14,51 @@ This demonstrates the design and simulation of a **CMOS Inverter** using **Caden
 ## Schematic  
 The schematic of the CMOS inverter is designed using **Cadence Virtuoso**.  
 
-![Schematic](images/inverter_schematic.png)  
+![Schematic](inverter.png)  
 
 ---
 
 ## Layout  
 The layout follows **design rules (DRC)** and has been verified for **LVS**.  
 
-![Layout](images/inverter_layout.png)  
+![Layout](layoutview.png)  
 
 ---
 
 ## Testbench Circuit  
 The testbench is designed to verify the functionality of the CMOS inverter.  
 
-![Testbench](images/inverter_testbench.png)  
+![Testbench](sim.png)  
 
 ---
 
 ## Simulation and Output Waveform  
 The waveform below shows the CMOS inverter's response to different input conditions.  
 
-![Output Waveform](images/inverter_waveform.png)  
+![Output Waveform](Output_Record.png)  
 
 ---
+
+## Extracted View 
+  
+
+![Layout](Extracted_View.png)  
+
+---
+
+## Layout vs Scheamtic Transient Response  
+  
+
+![LVS](LAYOUT_VS_SCHEMATIC_TR_RESPONSE.png)  
+
+---
+## Propagation Delay  
+  
+
+![Propataion Delay](Propgation_Delay_inADE_XL.png)  
+
+---
+
 
 ## Tools Used  
 - **Cadence Virtuoso** – Schematic and Layout Design  
