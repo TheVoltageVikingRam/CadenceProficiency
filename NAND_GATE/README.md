@@ -14,30 +14,37 @@ This demonstrates the design and simulation of a **NAND Gate** using **Cadence V
 ## Schematic  
 The schematic of the NAND gate is designed using **Cadence Virtuoso**.  
 
-![Schematic](images/nand_schematic.png)  
+![Schematic](NAND_GATE_SCHEMATIC.png)  
 
 ---
 
 ## Layout  
 The layout follows **design rules (DRC)** and has been verified for **LVS**.  
 
-![Layout](images/nand_layout.png)  
+![Layout](Layout_NAND.png)  
 
 ---
 
 ## Testbench Circuit  
 The testbench is designed to verify the functionality of the NAND gate.  
 
-![Testbench](images/nand_testbench.png)  
+![Testbench](NAND_Test-bench.png)  
 
 ---
 
 ## Simulation and Output Waveform  
 The waveform below shows the NAND gate's response to different input conditions.  
 
-![Output Waveform](images/nand_waveform.png)  
+![Output Waveform](Transient_Response_NAND.png)  
 
 ---
+## Delay Calculation  
+  
+
+![Delay_Calculations](Delay_Calc_NAND.png)  
+
+---
+
 
 ## Tools Used  
 - **Cadence Virtuoso** – Schematic and Layout Design  
@@ -48,4 +55,3 @@ The waveform below shows the NAND gate's response to different input conditions.
 
 ## Author  
 **Ram Tripathi**  
-**Roll No: 22HEL2231**
