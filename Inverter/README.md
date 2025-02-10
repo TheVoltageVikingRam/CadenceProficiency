@@ -8,7 +8,7 @@ This demonstrates the design and simulation of a **CMOS Inverter** using **Caden
 - [Testbench Circuit](#testbench-circuit)  
 - [Simulation and Output Waveform](#simulation-and-output-waveform)  
 - [Tools Used](#tools-used)  
-
+- [Parametric Analysis](#Parametric Analysis)
 ---
 
 ## Schematic  
@@ -58,8 +58,12 @@ The waveform below shows the CMOS inverter's response to different input conditi
 ![Propataion Delay](Propgation_Delay_inADE_XL.png)  
 
 ---
+## Parametric Analysis
+Parametric Analysis of Inverter Circuit by varying Gate width of PMOS and NMOS.
 
+![Parametric Analysis](Parametric_Analysis_of_CMOS_Inv.png)
 
+---
 ## Tools Used  
 - **Cadence Virtuoso** – Schematic and Layout Design  
 - **Spectre Simulator** – Circuit Simulation  
