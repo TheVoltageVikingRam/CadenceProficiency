@@ -9,6 +9,7 @@ This demonstrates the design and simulation of a **CMOS Inverter** using **Caden
 - [Simulation and Output Waveform](#simulation-and-output-waveform)  
 - [Tools Used](#tools-used)  
 - [Parametric Analysis](#Parametric-Analysis)
+- [Corner Analysis](#Corner-Analysis)
 ---
 
 ## Schematic  
@@ -64,6 +65,15 @@ Parametric Analysis of Inverter Circuit by varying Gate width of PMOS and NMOS.
 ![Parametric Analysis](Parametric_Analysis_of_CMOS_Inv.png)
 
 ---
+
+## Corner Analysis
+Corner Analysis of Inverter Circuit by varying Gate width of PMOS and NMOS.
+
+![Corner Analysis](Corner_Analysis.png)
+
+---
+
+
 ## Tools Used  
 - **Cadence Virtuoso** – Schematic and Layout Design  
 - **Spectre Simulator** – Circuit Simulation  
