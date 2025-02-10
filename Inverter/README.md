@@ -8,7 +8,7 @@ This demonstrates the design and simulation of a **CMOS Inverter** using **Caden
 - [Testbench Circuit](#testbench-circuit)  
 - [Simulation and Output Waveform](#simulation-and-output-waveform)  
 - [Tools Used](#tools-used)  
-- [Parametric Analysis](#Parametric Analysis)
+- [Parametric Analysis](#Parametric_Analysis)
 ---
 
 ## Schematic  
