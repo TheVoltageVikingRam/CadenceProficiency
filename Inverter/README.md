@@ -77,7 +77,7 @@ Corner Analysis of Inverter Circuit by varying Gate width of PMOS and NMOS.
 ## Tools Used  
 - **Cadence Virtuoso** – Schematic and Layout Design  
 - **Spectre Simulator** – Circuit Simulation  
-- **Assura / Calibre** – DRC & LVS Checks  
+- **Assura** – DRC & LVS Checks  
 
 ---
 
