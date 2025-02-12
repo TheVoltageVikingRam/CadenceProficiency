@@ -10,4 +10,4 @@ This repository demonstrates my proficiency in Cadence EDA tools
 
 ## Courtesy 
 
-Prof. Manoj Saxena sir and DBT star college program for availing compute resources. 
+Heartfelt thanks to Prof. Manoj Saxena sir and DBT star college program for availing compute resources. 
