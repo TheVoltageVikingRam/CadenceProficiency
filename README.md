@@ -2,6 +2,6 @@
 This repository demonstrates my proficiency in Cadence EDA tools
 
 
-##courtesy 
+## Courtesy 
 
 Prof. Manoj Saxena and DBT start college program for availing compute resources. 
