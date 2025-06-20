@@ -25,7 +25,7 @@ The schematic below shows the transistor-level implementation of a single-stage 
 ## Transient Analysis  
 Transient simulation was performed to verify the time-domain response of the amplifier to an input step or ramp signal.
 
-![Transient Analysis](./Single_Stage oamp transient analysis.png)
+![Transient Analysis](./Single_Stage_oamp%20transient%20analysis.png)
 
 ---
 
