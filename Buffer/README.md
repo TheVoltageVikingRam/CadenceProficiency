@@ -49,7 +49,7 @@ The testbench was developed to analyze both **static and dynamic** behavior of t
 ## Layout  
 The layout of the buffer was created following standard design rules.
 
-![Layout](./Layout%20and%20Schematic%20Match.png)
+![Layout](./Layout.png)
 
 ---
 
