@@ -24,23 +24,6 @@ The schematic shows the implementation of a 3-stage ring oscillator using CMOS i
 The transient analysis confirms the oscillatory behavior of the ring oscillator and helps calculate the frequency of operation.
 
 ![Transient Simulation](./ring_osc_transient.png)
-
----
-
-## Oscillation Frequency  
-
-The oscillation frequency is calculated from the period of the output waveform using the formula:
-
-\[
-f = \frac{1}{2 \cdot N \cdot t_{\text{delay}}}
-\]
-
-Where:  
-- N = 3 is the number of inverter stages  
-- t_{\text{delay}} is the propagation delay per inverter stage
-
-Measure the time between two rising (or falling) edges in the transient waveform to extract the period.
-
 ---
 
 ## Design Principle
