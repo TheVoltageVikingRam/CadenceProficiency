@@ -74,7 +74,7 @@ The extracted view includes parasitic capacitance and resistance using **RCX (Pa
 ## Tools Used  
 - **Cadence Virtuoso** – For schematic and layout design  
 - **Spectre** – For transient and DC simulations  
-- **Assura/Calibre** – For DRC & LVS verification  
+- **Assura** – For DRC & LVS verification  
 - **RCX** – For post-layout parasitic extraction  
 
 ---
