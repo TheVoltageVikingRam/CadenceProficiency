@@ -60,7 +60,7 @@ The layout of the buffer was created following standard design rules.
 
 ![No DRC](./No_DRC.png)  
 ![LVS Report](./LVS%20with%20No%20mismatch.png)
-
+![Layout](./Layout%20and%20Schematic%20Match.png)
 ---
 
 ## Post-Layout (RCX) View  
