@@ -85,7 +85,7 @@ Post-layout transient waveform was used to estimate switching energy consumption
 ## 🧰 Tools Used  
 - **Cadence Virtuoso** – Schematic, Symbol, and Layout Design  
 - **Spectre** – Transient Simulation  
-- **Assura/Calibre** – DRC and LVS  
+- **Assura** – DRC and LVS  
 - **ADE XL** – Waveform analysis and power estimation  
 
 ---
