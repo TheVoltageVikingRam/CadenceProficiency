@@ -1,4 +1,3 @@
-
 # CMOS AND Gate Design in Cadence Virtuoso
 
 This repository documents the complete **CMOS AND Gate** design flow in **Cadence Virtuoso**, covering schematic creation, layout, simulation, verification (DRC/LVS), and power analysis.
@@ -19,42 +18,42 @@ This repository documents the complete **CMOS AND Gate** design flow in **Cadenc
 
 ---
 
-## 📐 Schematic  
+## Schematic  
 The AND gate is implemented using CMOS logic with pull-up PMOS and pull-down NMOS networks.
 
 ![CMOS Schematic](./CMOS_AND_Gate_schematic.png)
 
 ---
 
-## 🔣 Symbol View  
+## Symbol View  
 A symbol was generated from the schematic for hierarchical testbench connection.
 
 ![Symbol](./AND_Gate_Symbol.png)
 
 ---
 
-## 🧪 Testbench  
+## Testbench  
 The testbench is used to provide input stimulus and observe output response.
 
 ![Testbench](./AND_Gate_tb.png)
 
 ---
 
-## 📊 Transient Simulation  
+## Transient Simulation  
 Transient simulation validates the functionality of the AND gate under dynamic conditions.
 
 ![Transient Waveform](./AND_Gate_transient_waveform.png)
 
 ---
 
-## 🧱 Layout  
+## Layout  
 The full custom layout of the AND gate was drawn following foundry design rules.
 
 ![Layout](./AND_GATE_Layout.png)
 
 ---
 
-## ✅ DRC and LVS Checks
+## DRC and LVS Checks
 
 - ✅ **No DRC Errors:**  
   Verified using DRC tool — no design rule violations.
@@ -68,28 +67,27 @@ The full custom layout of the AND gate was drawn following foundry design rules.
 
 ---
 
-## 🔄 Schematic vs Layout Matching  
+## Schematic vs Layout Matching  
 A visual confirmation of netlist and connectivity matching between schematic and layout.
 
 ![Layout vs Schematic Match](./Layout_and_Schematic_Match.png)
 
 ---
 
-## ⚡ Energy Estimation  
+## Energy Estimation  
 Post-layout transient waveform was used to estimate switching energy consumption.
 
 ![Energy](./Energy_Calculation_AND.png)
 
 ---
 
-## 🧰 Tools Used  
+## Tools Used  
 - **Cadence Virtuoso** – Schematic, Symbol, and Layout Design  
 - **Spectre** – Transient Simulation  
-- **Assura** – DRC and LVS  
+- **Assura/Calibre** – DRC and LVS  
 - **ADE XL** – Waveform analysis and power estimation  
 
 ---
 
-## 👨‍💻 Author  
+## Author  
 **Ram Tripathi**
-
