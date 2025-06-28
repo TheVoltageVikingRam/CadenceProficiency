@@ -94,7 +94,3 @@ The Annotated View shows extracted parasitics and net interconnects for back-ann
 **Ram Tripathi**  
 
 
----
-
-## 📄 License  
-This project is licensed under the [MIT License](./LICENSE).
