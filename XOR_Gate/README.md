@@ -1,102 +1,98 @@
+# CMOS XOR Gate Design in Cadence Virtuoso
 
-# CMOS AND Gate Design in Cadence Virtuoso
-
-This repository presents the full-custom design flow of a **CMOS AND Gate** using **Cadence Virtuoso**. It includes schematic creation, layout design, simulation results, DRC/LVS checks, and energy estimation.
+This repository documents the complete **CMOS XOR Gate** design and verification flow in **Cadence Virtuoso**, including schematic, layout, DRC/LVS verification, RC extraction, and transient simulation.
 
 ---
 
 ## 📁 Table of Contents  
 - [Schematic](#schematic)  
-- [Symbol View](#symbol-view)  
 - [Testbench](#testbench)  
 - [Transient Simulation](#transient-simulation)  
 - [Layout](#layout)  
 - [DRC and LVS Checks](#drc-and-lvs-checks)  
 - [Schematic vs Layout Matching](#schematic-vs-layout-matching)  
-- [Energy Estimation](#energy-estimation)  
+- [Parasitic Extraction (RCX)](#parasitic-extraction-rcx)  
+- [AV Extracted View](#av-extracted-view)  
 - [Tools Used](#tools-used)  
 - [Author](#author)
 
 ---
 
 ## 🧩 Schematic  
-The AND gate is implemented using CMOS logic, with a PMOS pull-up network and NMOS pull-down network.
+The XOR gate is implemented using complementary CMOS logic and verified using a testbench.
 
-![CMOS Schematic](./CMOS_AND_Gate_schematic.png)
-
----
-
-## 🎛️ Symbol View  
-A custom symbol was created for hierarchical testbench integration.
-
-![Symbol](./AND_Gate_Symbol.png)
+![Schematic](./XOR_Gate_Schematic.png)
 
 ---
 
 ## 🧪 Testbench  
-The testbench provides input stimulus (`A`, `B`) and captures the output waveform of the AND gate.
+The testbench applies all logic input combinations to the XOR gate to verify its truth table.
 
-![Testbench](./AND_Gate_tb.png)
+![Testbench](./xOR_Tb.png)
 
 ---
 
 ## 📈 Transient Simulation  
-Spectre transient analysis was used to validate correct functionality of the logic gate.
+The waveform confirms the XOR gate’s functionality: output is high only when inputs differ.
 
-![Transient Waveform](./AND_Gate_transient_waveform.png)
+![Transient](./XOR_Transient.png)
 
 ---
 
 ## 🧱 Layout  
-The layout was drawn manually following GPDK 90nm design rules for fabrication compatibility.
+The physical layout is drawn using standard cells and transistors, conforming to 90nm design rules.
 
-![Layout](./AND_GATE_Layout.png)
+![Layout Match](./layout%20and%20schematic%20match.png)
 
 ---
 
 ## ✅ DRC and LVS Checks  
 
 ### ✔️ DRC: Design Rule Check  
-No DRC violations were found using Assura.
+No design rule violations; layout is clean and fabrication-compliant.
 
-![DRC](./No_DRC_errors_AND.png)
+![DRC Clearance](./DRC_Clearance.png)
 
 ### ✔️ LVS: Layout vs Schematic  
-The layout netlist matches the schematic exactly with no mismatches.
+Netlist and connectivity match between schematic and layout.
 
-![LVS](./LVS_Clearance.png)
-
----
-
-## 🧩 Schematic vs Layout Matching  
-Visually confirms that the physical layout corresponds to the intended circuit schematic.
-
-![Layout vs Schematic Match](./Layout_and_Schematic_Match.png)
+![LVS Clearance](./LVS_Clearance.png)
 
 ---
 
-## ⚡ Energy Estimation  
-Post-layout simulation results were analyzed to estimate switching energy of the gate.
+## 🔍 Schematic vs Layout Matching  
+A visual match between schematic connectivity and layout topology.
 
-![Energy](./Energy_Calculation_AND.png)
+![Match View](./layout%20and%20schematic%20match.png)
+
+---
+
+## 🧠 Parasitic Extraction (RCX)  
+Parasitic resistances and capacitances were extracted using Assura to enable post-layout simulation.
+
+![RCX Run](./RCX_Run.png)
+
+---
+
+## 🧾 AV Extracted View  
+The Annotated View shows extracted parasitics and net interconnects for back-annotation.
+
+![AV Extracted View](./AV_Extracted_view.png)
 
 ---
 
 ## 🛠️ Tools Used  
-- **Cadence Virtuoso** – Schematic, Symbol, and Layout Design  
-- **Spectre Simulator** – Transient Analysis  
-- **Assura/Calibre** – DRC and LVS Checks  
-- **ADE XL** – Power and Energy Analysis
+- **Cadence Virtuoso** – Schematic, Layout Design  
+- **Spectre Simulator** – Transient Simulation  
+- **Assura** – DRC, LVS, and RCX  
+- **ADE L/XL** – Simulation and Analysis Environment
 
 ---
 
 ## 👤 Author  
 
 **Ram Tripathi**  
-Roll No: 22HEL2231  
-B.Tech in Electronics – University of Delhi & IIT Madras  
-Samsung Fellow (Grade-1) – India Semiconductor Mission  
-Mentor: Prof. Mannoj Saxena
+
 
 ---
 
