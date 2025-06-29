@@ -5,17 +5,17 @@ This repository showcases the complete design flow of a **CMOS 3-Input AND Gate*
 ---
 
 ## 📁 Table of Contents  
-- [Schematic](#schematic)  
-- [Symbol View](#symbol-view)  
-- [Testbench](#testbench)  
-- [Transient Simulation](#transient-simulation)  
-- [Layout](#layout)  
-- [DRC and LVS Checks](#drc-and-lvs-checks)  
-- [Schematic vs Layout Matching](#schematic-vs-layout-matching)  
-- [Parasitic Extraction (RCX)](#parasitic-extraction-rcx)  
-- [AV Extracted View](#av-extracted-view)  
-- [Tools Used](#tools-used)  
-- [Author](#author)
+- [🧩 Schematic](#-schematic)  
+- [🎛️ Symbol View](#-symbol-view)  
+- [🧪 Testbench](#-testbench)  
+- [📈 Transient Simulation](#-transient-simulation)  
+- [🧱 Layout](#-layout)  
+- [✅ DRC and LVS Checks](#-drc-and-lvs-checks)  
+- [🔍 Schematic vs Layout Matching](#-schematic-vs-layout-matching)  
+- [🧠 Parasitic Extraction (RCX)](#-parasitic-extraction-rcx)  
+- [🧾 AV Extracted View](#-av-extracted-view)  
+- [🛠️ Tools Used](#-tools-used)  
+- [👤 Author](#-author)
 
 ---
 
