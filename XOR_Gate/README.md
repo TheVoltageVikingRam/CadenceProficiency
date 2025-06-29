@@ -42,7 +42,7 @@ The waveform confirms the XOR gate’s functionality: output is high only when i
 ## 🧱 Layout  
 The physical layout is drawn using standard cells and transistors, conforming to 90nm design rules.
 
-![Layout Match](./layout%20and%20schematic%20match.png)
+![Layout](./layout.png)
 
 ---
 
