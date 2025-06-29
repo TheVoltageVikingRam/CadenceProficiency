@@ -1,102 +1,110 @@
-
 # CMOS OR Gate Design in Cadence Virtuoso
 
-This repository contains the full-custom design and simulation of a **CMOS OR Gate** implemented using **Cadence Virtuoso**. It covers schematic design, layout, DRC/LVS verification, post-layout RC extraction, transient analysis, and energy estimation for a single cycle.
+This repository contains the full-custom design and simulation of a **CMOS OR Gate** implemented using **Cadence Virtuoso**. It includes schematic design, symbol generation, testbench simulation, layout implementation, DRC/LVS verification, post-layout RC extraction, and energy estimation.
 
 ---
 
-## 📁 Table of Contents  
-- [🧩 Schematic](#-schematic)  
-- [🧪 Testbench](#-testbench)  
-- [📈 Transient Simulation](#-transient-simulation)  
-- [🧱 Layout](#-layout)  
-- [✅ DRC and LVS Checks](#-drc-and-lvs-checks)  
-- [🔍 LVS Match View](#-lvs-match-view)  
-- [🧠 Parasitic Extraction (RCX)](#-parasitic-extraction-rcx)  
-- [🧾 AV Extracted View](#-av-extracted-view)  
-- [⚡ Energy Estimation](#-energy-estimation)  
-- [🛠️ Tools Used](#-tools-used)  
-- [👤 Author](#-author)
+## Table of Contents  
+- [Schematic](#schematic)  
+- [Symbol View](#symbol-view)  
+- [Testbench](#testbench)  
+- [Transient Simulation](#transient-simulation)  
+- [Layout](#layout)  
+- [DRC and LVS Checks](#drc-and-lvs-checks)  
+- [LVS Match View](#lvs-match-view)  
+- [Parasitic Extraction (RCX)](#parasitic-extraction-rcx)  
+- [AV Extracted View](#av-extracted-view)  
+- [Energy Estimation](#energy-estimation)  
+- [Tools Used](#tools-used)  
+- [Author](#author)
 
 ---
 
-## 🧩 Schematic  
+## Schematic  
 The OR gate is designed using complementary CMOS logic. It outputs HIGH if either input is HIGH.
 
 ![Schematic](./Schematic_OR.png)
 
 ---
 
-## 🧪 Testbench  
-The testbench applies all input combinations (`A`, `B`) to validate the gate’s logical behavior.
+## Symbol View  
+A custom symbol view was generated to enable modular design and testbench integration.
 
-![Testbench](./OR_Gate_testbench.png)
+![Symbol](./OR_Gate_Symbol.png)
 
 ---
 
-## 📈 Transient Simulation  
-Transient waveform confirms that the OR gate functions correctly under all possible input transitions.
+## Testbench  
+The testbench applies all binary input combinations (`A`, `B`) to validate the OR gate’s logic.
+
+![Testbench](./OR_Gate_tb.png)
+
+---
+
+## Transient Simulation  
+Transient simulation confirms correct OR gate behavior under all logic transitions.
 
 ![Transient](./OR_Gate_transient_waveform.png)
 
 ---
 
-## 🧱 Layout  
-The layout was created in Cadence Virtuoso following 90nm design rules and optimized transistor placement.
+## Layout  
+The layout was created using Cadence Virtuoso, following 90nm CMOS design rules.
 
 ![Layout](./OR_Layout.png)
 
 ---
 
-## ✅ DRC and LVS Checks  
+## DRC and LVS Checks
 
-### ✔️ DRC (Design Rule Check)  
+### DRC: Design Rule Check  
 No design rule violations were found. Verified using **Assura DRC**.
 
 ![DRC](./DRC_Clearance.png)
 
-### ✔️ LVS (Layout vs Schematic)  
-The layout netlist matches the schematic functionally and topologically.
+### LVS: Layout vs Schematic  
+The layout matches the schematic in both topology and connectivity.
 
 ![LVS Run](./LVS_run.png)
 
 ---
 
-## 🔍 LVS Match View  
-Graphical view confirming the net-to-net match between the schematic and layout.
+## LVS Match View  
+Visual match between schematic netlist and layout confirms correctness.
 
 ![LVS Match](./LVS_Match.png)
 
 ---
 
-## 🧠 Parasitic Extraction (RCX)  
-RC parasitic extraction was performed to include interconnect resistance and capacitance in simulations.
+## Parasitic Extraction (RCX)  
+RC parasitic extraction was done to account for layout-related R and C during post-layout simulation.
 
 ![RCX](./RCX_Run.png)
 
 ---
 
-## 🧾 AV Extracted View  
-The Annotated View highlights parasitic R and C components mapped on the layout nets.
+## AV Extracted View  
+The AV (Annotated View) highlights the extracted parasitic components on layout interconnects.
 
 ![AV Extracted View](./AV_Extracted_view.png)
 
 ---
 
-## ⚡ Energy Estimation  
-Estimated energy consumption for a complete OR gate switching cycle using post-layout simulation.
+## Energy Estimation  
+Power analysis based on post-layout switching activity for a single operation cycle.
 
 ![Energy](./Energy_one_cycle_OR.png)
 
 ---
 
-## 🛠️ Tools Used  
-- **Cadence Virtuoso** – Schematic, Layout  
+## Tools Used  
+- **Cadence Virtuoso** – Schematic, Symbol, and Layout Design  
 - **Spectre** – Transient Simulation  
 - **Assura** – DRC, LVS, RCX  
-- **ADE L** – Testbench Simulation & Power Estimation
+- **ADE L** – Simulation & Energy Estimation
 
 ---
 
-## 👤 Author  
+## Author  
+
 **Ram Tripathi**
