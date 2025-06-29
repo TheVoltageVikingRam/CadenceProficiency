@@ -28,7 +28,7 @@ The XOR gate is implemented using complementary CMOS logic and verified using a 
 ## Testbench  
 The testbench applies all logic input combinations to the XOR gate to verify its truth table.
 
-![Testbench](./xOR_Tb.png)
+![Testbench](./XOR_TB.png)
 
 ---
 
