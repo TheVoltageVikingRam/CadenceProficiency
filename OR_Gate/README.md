@@ -37,7 +37,7 @@ A custom symbol view was generated to enable modular design and testbench integr
 ## Testbench  
 The testbench applies all binary input combinations (`A`, `B`) to validate the OR gate’s logic.
 
-![Testbench](./OR_Gate_tb.png)
+![Testbench](./OR_Gate_testbench.png)
 
 ---
 
