@@ -1,6 +1,6 @@
 # CMOS Half Adder Design in Cadence Virtuoso
 
-This repository presents the full-custom design and verification of a **CMOS Half Adder** using **Cadence Virtuoso**. The project includes schematic creation, symbol generation, layout design, DRC/LVS checks, transient simulation, parasitic extraction, and power estimation for one operation cycle.
+This repository presents the full-custom design and verification of a **CMOS Half Adder** using **Cadence Virtuoso**. The project includes schematic creation, symbol generation, layout design, DRC/LVS verification, RC parasitic extraction, transient simulation, and energy estimation for a single operation cycle.
 
 ---
 
@@ -13,6 +13,7 @@ This repository presents the full-custom design and verification of a **CMOS Hal
 - [✅ DRC and LVS Checks](#-drc-and-lvs-checks)  
 - [🔍 Schematic vs Layout Matching](#-schematic-vs-layout-matching)  
 - [🧠 Parasitic Extraction (RCX)](#-parasitic-extraction-rcx)  
+- [🧾 AV Extracted View](#-av-extracted-view)  
 - [⚡ Energy Estimation](#-energy-estimation)  
 - [🛠️ Tools Used](#-tools-used)  
 - [👤 Author](#-author)
@@ -20,35 +21,35 @@ This repository presents the full-custom design and verification of a **CMOS Hal
 ---
 
 ## 🧩 Schematic  
-The half adder circuit is designed using CMOS logic to compute both **SUM** and **CARRY** outputs for two binary inputs.
+The half adder is designed using CMOS logic to compute both **SUM** and **CARRY** outputs from two binary inputs.
 
 ![Schematic](./Schematic_HA.png)
 
 ---
 
 ## 🎛️ Symbol View  
-A custom symbol view was generated to simplify testbench integration and hierarchical design.
+A symbol was generated from the schematic for hierarchical testbench use.
 
 ![Symbol](./Symbol_HA.png)
 
 ---
 
 ## 🧪 Testbench Setup  
-The testbench applies all binary combinations of inputs `A` and `B` to validate SUM and CARRY functionality.
+All four binary input combinations (`A`, `B`) were applied to verify the half adder behavior.
 
 ![Testbench](./Test_bench_setup_HA.png)
 
 ---
 
 ## 📈 Transient Simulation  
-Transient waveform confirms correct logical behavior of the half adder. SUM and CARRY outputs respond correctly to all input transitions.
+Transient analysis confirms correct logic for SUM (`A ⊕ B`) and CARRY (`A · B`) outputs.
 
 ![Transient](./Transient_Response_HA.png)
 
 ---
 
 ## 🧱 Layout  
-The full-custom layout of the half adder was implemented using standard 90nm design rules in Cadence Virtuoso.
+The layout was drawn manually in Cadence Virtuoso, following 90nm design rules.
 
 ![Layout](./Layout.png)
 
@@ -57,46 +58,52 @@ The full-custom layout of the half adder was implemented using standard 90nm des
 ## ✅ DRC and LVS Checks  
 
 ### ✔️ DRC (Design Rule Check)  
-The layout passed all DRC checks with no violations, verified using **Assura**.
+No design rule violations were found. Verified using **Assura**.
 
 ![DRC](./DRC_Clearance.png)
 
 ### ✔️ LVS (Layout vs Schematic)  
-The layout matches the schematic functionally and electrically.
+The layout matches the schematic netlist perfectly with no mismatches.
 
 ![LVS](./LVS_Clearance.png)
 
 ---
 
 ## 🔍 Schematic vs Layout Matching  
-Graphical matching confirms the layout connectivity aligns with the schematic netlist.
+Visual match verification between the layout and schematic to ensure complete functional alignment.
 
-![Match](./Layout_and_schematic_match.png)
+![Layout Match](./Layout_and_schematic_match.png)
 
 ---
 
 ## 🧠 Parasitic Extraction (RCX)  
-Post-layout parasitic extraction was performed using Assura RCX to analyze layout-dependent resistive and capacitive effects.
+Post-layout **resistor-capacitor (RC)** extraction was performed using **Assura RCX** for more accurate simulation.
 
 ![RCX](./RCX_Run.png)
 
 ---
 
+## 🧾 AV Extracted View  
+The **Annotated View** shows detailed parasitic resistances and capacitances mapped onto layout nets.
+
+![AV Extracted View](./AV_Extracted_view_HA.png)
+
+---
+
 ## ⚡ Energy Estimation  
-Estimated switching energy for one cycle of half adder operation, based on post-layout simulation.
+Energy consumption was estimated using post-layout simulation data for one full switching cycle.
 
 ![Energy](./Energy_one_cycle_HA.png)
 
 ---
 
 ## 🛠️ Tools Used  
-- **Cadence Virtuoso** – Schematic, Layout, and Symbol Design  
+- **Cadence Virtuoso** – Schematic, Layout, Symbol Design  
 - **Spectre** – Transient Simulation  
-- **Assura** – DRC, LVS, RCX  
-- **ADE L** – Waveform Viewing & Power Estimation
+- **Assura** – DRC, LVS, and RCX  
+- **ADE L** – Simulation Control and Waveform Viewing
 
 ---
 
 ## 👤 Author  
 **Ram Tripathi**
-
