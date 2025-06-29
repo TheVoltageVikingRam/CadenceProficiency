@@ -30,7 +30,7 @@ The OR gate is designed using complementary CMOS logic. It outputs HIGH if eithe
 ## 🧪 Testbench  
 The testbench applies all input combinations (`A`, `B`) to validate the gate’s logical behavior.
 
-![Testbench](./OR_Gate_tb.png)
+![Testbench](./OR_Gate_testbench.png)
 
 ---
 
