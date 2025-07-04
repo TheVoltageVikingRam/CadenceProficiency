@@ -1,105 +1,115 @@
-# CMOS 3-Input AND Gate Design in Cadence Virtuoso
+# CMOS 2-Input XNOR Gate Design using Cadence Virtuoso
 
-This repository showcases the complete design flow of a **CMOS 3-Input AND Gate** using **Cadence Virtuoso**, including schematic design, symbol creation, testbench simulation, layout implementation, DRC/LVS verification, and post-layout RC extraction using **Assura**.
+This repository demonstrates the full custom IC design flow of a **2-input CMOS XNOR Gate** using **Cadence Virtuoso**. The project includes schematic design, symbol creation, testbench simulation, full-custom layout, DRC/LVS verification, parasitic extraction using **Assura RCX**, and final transient simulation using the extracted view.
 
 ---
 
-## 📁 Table of Contents  
-- [🧩 Schematic](#-schematic)  
-- [🎛️ Symbol View](#-symbol-view)  
-- [🧪 Testbench](#-testbench)  
-- [📈 Transient Simulation](#-transient-simulation)  
-- [🧱 Layout](#-layout)  
-- [✅ DRC and LVS Checks](#-drc-and-lvs-checks)  
-- [🔍 Schematic vs Layout Matching](#-schematic-vs-layout-matching)  
-- [🧠 Parasitic Extraction (RCX)](#-parasitic-extraction-rcx)  
-- [🧾 AV Extracted View](#-av-extracted-view)  
-- [🛠️ Tools Used](#-tools-used)  
+## 📁 Table of Contents
+- [🧩 Schematic](#-schematic)
+- [🎛️ Symbol View](#-symbol-view)
+- [🧪 Testbench](#-testbench)
+- [📈 Transient Simulation](#-transient-simulation)
+- [🧱 Layout](#-layout)
+- [✅ DRC and LVS Checks](#-drc-and-lvs-checks)
+- [🔍 Schematic vs Layout Matching](#-schematic-vs-layout-matching)
+- [🧠 Parasitic Extraction (RCX)](#-parasitic-extraction-rcx)
+- [🧾 AV Extracted View](#-av-extracted-view)
+- [🛠️ Tools Used](#-tools-used)
 - [👤 Author](#-author)
 
 ---
 
-## 🧩 Schematic  
-The 3-input AND gate is designed using CMOS logic, consisting of a pull-up PMOS network and pull-down NMOS network.
+## 🧩 Schematic
 
-![Schematic](./3_Input_AND_Schematic.png)
+The CMOS XNOR gate is implemented using complementary logic. It includes parallel and series combinations of PMOS and NMOS transistors for correct logic levels.
 
----
-
-## 🎛️ Symbol View  
-The symbol view enables modular design and was used for easy testbench integration.
-
-![Symbol](./3_Input_AND_Symbol.png)
+![Schematic](./XNOR_Schematic.png)
 
 ---
 
-## 🧪 Testbench  
-All input combinations for the 3-input AND gate were applied using a custom testbench.
+## 🎛️ Symbol View
 
-![Testbench](./3_Input_AND_tb.png)
+A custom symbol view was created for modular and hierarchical design purposes, easing the process of testbench integration.
 
----
-
-## 📈 Transient Simulation  
-Spectre-based transient simulation verifies the gate behavior dynamically. Output is HIGH only when all three inputs are HIGH.
-
-![Transient](./3_input_AND_Transient_Waveform.png)
+![Symbol](./XNOR_Symbol.png)
 
 ---
 
-## 🧱 Layout  
-A full-custom layout was created based on the schematic using Cadence Virtuoso.
+## 🧪 Testbench
 
-![Layout](./XOR_Layout.png)
+A dedicated testbench was designed to apply all possible input combinations and observe the output waveform for functional verification.
+
+![Testbench](./XNOR_TB.png)
 
 ---
 
-## ✅ DRC and LVS Checks  
+## 📈 Transient Simulation
 
-### ✔️ DRC (Design Rule Check)  
-All layout rules were satisfied, verified via **Assura**.
+Transient simulation verifies correct functionality of the XNOR gate. Output goes high when both inputs are the same.
+
+![Waveform](./Transient_Waveform_XNOR.png)
+
+---
+
+## 🧱 Layout
+
+The layout was manually drawn in Virtuoso, ensuring matching geometry, connectivity, and layer usage as per the technology design rules.
+
+![Layout](./Layout_XNOR.png)
+
+---
+
+## ✅ DRC and LVS Checks
+
+### ✔️ DRC (Design Rule Check)
+
+The layout is **DRC clean**, verified using **Assura DRC**.
 
 ![DRC](./No_DRC_Errors.png)
 
-### ✔️ LVS (Layout vs Schematic)  
-The layout matches the schematic netlist exactly.
+### ✔️ LVS (Layout vs Schematic)
+
+The layout was validated against the schematic using **Assura LVS**, with a successful netlist match.
 
 ![LVS](./LVS_Run.png)
 
 ---
 
-## 🔍 Schematic vs Layout Matching  
-A graphical comparison confirming full connectivity and functionality match between layout and schematic.
+## 🔍 Schematic vs Layout Matching
 
-![Layout Match](./Layout_and_schematic_match.png)
+Graphical layout-vs-schematic comparison showing connectivity and device matching.
 
----
-
-## 🧠 Parasitic Extraction (RCX)  
-RCX (resistor-capacitor extraction) was performed to analyze the effect of parasitic components on circuit behavior.
-
-![RCX](./RCX_Run.png)
+![Match](./Layout_and_schematic_match_XNOR.png)
 
 ---
 
-## 🧾 AV Extracted View  
-The Annotated View displays the extracted resistive and capacitive parasitics on the layout for back-annotation into simulations.
+## 🧠 Parasitic Extraction (RCX)
 
-![AV Extracted View](./AV_Extracted_view.png)
+Resistor-Capacitor parasitic extraction was performed using **Assura RCX** to create a more accurate post-layout netlist.
 
----
-
-## 🛠️ Tools Used  
-- **Cadence Virtuoso** – Schematic, Symbol, Layout  
-- **Spectre** – Transient Simulation  
-- **Assura** – DRC, LVS, RCX  
-- **ADE L** – Testbench Simulation & Analysis  
+![RCX](./RCX_run.png)
 
 ---
 
-## 👤 Author  
+## 🧾 AV Extracted View
+
+The Annotated View includes extracted parasitics and is used for back-annotated simulations to verify real-world behavior.
+
+![Extracted](./AV_Extracted_view_XNOR.png)
+
+---
+
+## 🛠️ Tools Used
+
+- **Cadence Virtuoso** – Schematic, Symbol, Layout
+- **Assura** – DRC, LVS, RCX
+- **Spectre** – Transient Simulation
+- **ADE-L** – Analog Design Environment for testbench simulation
+- **Technology** – GPDK 90nm
+
+---
+
+## 👤 Author
+
 **Ram Tripathi**  
-Roll Number: 22HEL2231  
-University of Delhi & IIT Madras  
-Samsung EWS Grade-1 Fellow  
 
