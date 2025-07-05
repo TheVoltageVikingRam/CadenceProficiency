@@ -51,7 +51,7 @@ The simulation results confirm that the Half Subtractor correctly computes the d
 ## Layout  
 The layout was created using standard design rules and optimized for area and connectivity.
 
-![Layout](./Layout.png)
+![Layout](./Layout_HS.png)
 
 ---
 
