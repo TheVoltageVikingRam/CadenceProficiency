@@ -6,6 +6,7 @@ This repository documents the complete **CMOS XOR Gate** design and verification
 
 ## Table of Contents  
 - [Schematic](#schematic)  
+- [Symbol View](#symbol-view)  
 - [Testbench](#testbench)  
 - [Transient Simulation](#transient-simulation)  
 - [Layout](#layout)  
@@ -24,12 +25,14 @@ The XOR gate is implemented using complementary CMOS logic and verified using a 
 ![Schematic](./XOR_Gate_Schematic.png)
 
 ---
+
 ## Symbol View  
 A symbol was generated from the schematic for hierarchical testbench connection.
 
 ![Symbol](./Symbol_XOR.png)
 
 ---
+
 ## Testbench  
 The testbench applies all logic input combinations to the XOR gate to verify its truth table.
 
@@ -45,9 +48,9 @@ The waveform confirms the XOR gate’s functionality: output is high only when i
 ---
 
 ## Layout  
-The physical layout is drawn using standard cells and transistors, conforming to 90nm design rules.
+The physical layout of the XOR gate, ensuring proper design and compact area utilization.
 
-![Layout](./layout.png)
+![Layout](./Layout_XOR.png)
 
 ---
 
@@ -56,31 +59,31 @@ The physical layout is drawn using standard cells and transistors, conforming to
 ### DRC: Design Rule Check  
 No design rule violations; layout is clean and fabrication-compliant.
 
-![DRC Clearance](./DRC_Clearance.png)
+![DRC Clearance](./No_DRC_Errors.png)
 
 ### LVS: Layout vs Schematic  
 Netlist and connectivity match between schematic and layout.
 
-![LVS Clearance](./LVS_Clearance.png)
+![LVS Clearance](./LVS_run.png)
 
 ---
 
 ## Schematic vs Layout Matching  
-A visual match between schematic connectivity and layout topology.
+Visual confirmation that the schematic matches the layout at the net and device level.
 
-![Match View](./layout%20and%20schematic%20match.png)
+![Match View](./Layout_and_Schematic_match.png)
 
 ---
 
 ## Parasitic Extraction (RCX)  
-Parasitic resistances and capacitances were extracted using Assura to enable post-layout simulation.
+Post-layout parasitics are extracted using Assura RCX for accurate timing and performance analysis.
 
 ![RCX Run](./RCX_Run.png)
 
 ---
 
 ## AV Extracted View  
-The Annotated View shows extracted parasitics and net interconnects for back-annotation.
+The Annotated View (AV) includes parasitics and interconnect details for back-annotated simulation.
 
 ![AV Extracted View](./AV_Extracted_view.png)
 
@@ -95,5 +98,4 @@ The Annotated View shows extracted parasitics and net interconnects for back-ann
 ---
 
 ## Author  
-
 **Ram Tripathi**
