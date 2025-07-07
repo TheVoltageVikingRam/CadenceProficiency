@@ -2,7 +2,7 @@
 
 This repository demonstrates my proficiency in Cadence EDA tools through a curated set of snapshots taken from various analog and digital design projects. Each project reflects different stages of VLSI design using Cadence Virtuoso, including schematics, layouts, DRC/LVS/PEX outputs, and extracted views.
 
-## 🔒 Access to Original CAD Files
+### 🔒 Access to Original CAD Files
 
 > ⚠️ **Note**: This repository only contains **PNG snapshots** of the actual designs.  
 > The original Cadence Virtuoso project files (schematic, layout, netlist, simulation setup) are securely maintained in a **private repository**.
