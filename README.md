@@ -9,8 +9,7 @@ This repository demonstrates my proficiency in Cadence EDA tools through a curat
 
 If you are a recruiter, hiring manager, or collaborator and wish to review the **source CAD files** for any specific project:
 
-- Kindly send a request via:
-  - 📧 **Email**: *[your_email_here]*  
+- Kindly send a request via:  
   - 💼 [LinkedIn](https://www.linkedin.com/in/ram-tripathi-94365a257)  
   - Or open an issue with your contact details and purpose of access.
 
