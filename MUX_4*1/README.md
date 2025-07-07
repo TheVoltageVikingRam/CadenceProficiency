@@ -63,7 +63,7 @@ The layout passed all design rule checks and is fabrication-ready.
 ![DRC Clearance](./No_DRC_Errors_4x1_MUX.png)
 
 ### LVS: Layout vs Schematic  
-The layout was successfully verified against the schematic using LVS. A minor warning was observed but has no impact on correctness.
+The layout was successfully verified against the schematic using LVS.  
 
 ![LVS Run](./LVS_Run_4X1_MUX.png)  
 ![LVS Warning](./LVS_no_extraction_warnings.png)
