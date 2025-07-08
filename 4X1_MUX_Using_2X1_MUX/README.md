@@ -91,8 +91,10 @@ The AV view shows extracted netlists including parasitic values for back-annotat
 
 ---
 
-## Energy Analysis  
-The energy consumed in a single operation cycle of the 4×1 MUX is estimated using the post-layout simulation.
+### Energy Analysis  
+The post-layout simulation shows that the 4×1 MUX consumes approximately **75.65 femtojoules (fJ)** per switching cycle.  
+This value is well within expected bounds for a design implemented in **GPDK 90nm** technology. It reflects an efficient design with minimal parasitic effects and optimized switching activity. Such low energy consumption makes this implementation suitable for low-power digital systems and educational benchmarking.
+
 
 ![Energy Draw](./Energy_draw_for_one_cycle.png)
 
