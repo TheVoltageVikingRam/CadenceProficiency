@@ -1,109 +1,108 @@
-# SR Latch using NAND Gates (CMOS Design in Cadence Virtuoso)
+# CMOS SR Latch Implementation Using NAND Gates in Cadence Virtuoso
 
-This project showcases the design and implementation of an **SR (Set-Reset) Latch** using two cross-coupled **NAND gates**, created using Cadence Virtuoso. It includes all necessary stages: schematic design, symbol generation, testbench simulation, layout creation, verification (DRC/LVS), RC parasitic extraction, and energy analysis.
-
----
-
-## 📁 Project Structure
-
-| File | Description |
-|------|-------------|
-| `SR_NAND_Schematic.png` | Circuit schematic of SR latch using NAND gates |
-| `SR_using_NAND_symbol.png` | Symbol view used for hierarchical simulation |
-| `SR_Using_NAND_Tb.png` | Testbench used to verify functional behavior |
-| `SR_Latch_using_NAND_Transient.png` | Output waveform showing latch behavior |
-| `Layout_and_schematic_match_SR_Latch_NAND.png` | Match verification between schematic and layout |
-| `No_DRC_Errros.png` | Confirmation of no DRC violations |
-| `LVS_Run_SR_Latch_Using_NAND.png` | Successful LVS run |
-| `AV_extracted_view_SR_Latch_NAND.png` | Extracted layout view (with parasitics) |
-| `RCX_run_SR_Latch_Using_NAND.png` | RCX extraction run result |
-| `SR_Latch_Energy_Estimation.png` | Estimated energy for one cycle |
-| `README.md` | Project documentation |
+This repository presents the design, layout, simulation, and verification of an **SR Latch** implemented using **basic NAND gates** in **Cadence Virtuoso**, leveraging GPDK 90nm technology. The project includes schematic capture, symbol creation, transient simulation, DRC/LVS verification, parasitic extraction (RCX), and energy analysis.
 
 ---
 
-## 🔧 Schematic
+## Table of Contents  
+- [Schematic](#schematic)  
+- [Symbol View](#symbol-view)  
+- [Testbench](#testbench)  
+- [Transient Simulation](#transient-simulation)  
+- [Layout](#layout)  
+- [DRC and LVS Checks](#drc-and-lvs-checks)  
+- [Schematic vs Layout Matching](#schematic-vs-layout-matching)  
+- [Parasitic Extraction (RCX)](#parasitic-extraction-rcx)  
+- [AV Extracted View](#av-extracted-view)  
+- [Energy Analysis](#energy-analysis)  
+- [Tools Used](#tools-used)  
+- [Author](#author)
 
-The latch is implemented using two 2-input NAND gates connected in a cross-coupled manner. Inputs are **S (Set)** and **R (Reset)**.
+---
+
+## Schematic  
+The SR Latch is built using cross-coupled NAND gates. The latch operates with asynchronous Set (S) and Reset (R) inputs to store one bit of information.
 
 ![Schematic](./SR_NAND_Schematic.png)
 
 ---
 
-## 🧩 Symbol View
-
-A clean symbol was generated to allow hierarchical design usage.
+## Symbol View  
+A symbol for the SR latch was created to simplify testbench design and enable hierarchy in layout.
 
 ![Symbol](./SR_using_NAND_symbol.png)
 
 ---
 
-## ⚙️ Testbench
-
-A testbench was created to verify the latch behavior across various S and R input combinations.
+## Testbench  
+The testbench applies various Set and Reset inputs to validate latch behavior and stability.
 
 ![Testbench](./SR_Using_NAND_Tb.png)
 
 ---
 
-## 📈 Transient Response
-
-The transient simulation confirms correct operation:
-- Q is set when S = 0, R = 1
-- Q is reset when S = 1, R = 0
-- Invalid state at S = 0, R = 0
+## Transient Simulation  
+The transient simulation confirms correct operation of the latch including set, reset, and hold states.
 
 ![Transient](./SR_Latch_using_NAND_Transient.png)
 
 ---
 
-## 🧱 Layout
+## Layout  
+The layout is designed to adhere to DRC constraints and optimized for compact area and minimal parasitics.
 
-The layout of the SR latch was drawn following GPDK 90nm design rules.
-
-![Layout Match](./Layout_and_schematic_match_SR_Latch_NAND.png)
-
----
-
-## ✅ DRC and LVS
-
-- **DRC**: No design rule violations.
-  ![No DRC Errors](./No_DRC_Errros.png)
-
-- **LVS**: Layout matches the schematic.
-  ![LVS Run](./LVS_Run_SR_Latch_Using_NAND.png)
+![Layout](./Layout_and_schematic_match_SR_Latch_NAND.png)
 
 ---
 
-## 📦 RCX Extraction
+## DRC and LVS Checks
 
-RC parasitics were extracted for accurate post-layout simulation and power estimation.
+### DRC: Design Rule Check  
+The layout passed all design rule checks.
 
-![RCX](./RCX_run_SR_Latch_Using_NAND.png)
+![DRC Clearance](./No_DRC_Erros.png)
+
+### LVS: Layout vs Schematic  
+LVS confirms that the layout is electrically equivalent to the schematic.
+
+![LVS Run](./LVS_Run_SR_Latch_Using_NAND.png)
+
+---
+
+## Schematic vs Layout Matching  
+A visual confirmation of layout vs schematic structural alignment.
+
+![Match View](./Layout_and_schematic_match_SR_Latch_NAND.png)
+
+---
+
+## Parasitic Extraction (RCX)  
+RCX extracts resistance and capacitance values from the layout for accurate post-layout simulation.
+
+![RCX Run](./RCX_run_SR_Latch_Using_NAND.png)
+
+---
+
+## AV Extracted View  
+The AV view contains parasitics from the layout, used for back-annotated simulation.
 
 ![AV Extracted View](./AV_extracted_view_SR_Latch_NAND.png)
 
 ---
 
-## ⚡ Energy Estimation
+## Energy Analysis  
+The energy consumed per transition is estimated to be **within femtojoule range**, which aligns well with expected values for designs using GPDK 90nm technology. This efficiency makes it suitable for low-power latch-based storage or sequential logic systems.
 
-The energy consumed in one transition cycle was calculated based on the extracted netlist simulation.
-
-![Energy](./SR_Latch_Energy_Estimation.png)
-
----
-
-## 🛠️ Tools Used
-
-- **Cadence Virtuoso** – Schematic & Layout Design  
-- **Assura / Calibre** – DRC, LVS, and Parasitic Extraction  
-- **Spectre ADE L/XL** – Simulation and Energy Estimation  
-- **Technology** – GPDK 90nm
+![Energy Draw](./SR_Latch_Energy_Estimation.png)
 
 ---
 
-## 👤 Author
+## Tools Used  
+- **Cadence Virtuoso** – Schematic and Layout Design  
+- **Assura** – DRC, LVS, and RCX Extraction  
+- **Spectre / ADE L/XL** – Transient Simulation and Energy Estimation  
 
-**Ram Tripathi**  
-*BSc (H) Electronics, Deen Dayal Upadhyaya College (University of Delhi)*  
+---
 
+## Author  
+**Ram Tripathi**
