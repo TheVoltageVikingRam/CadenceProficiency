@@ -51,7 +51,7 @@ The transient simulation confirms correct operation of the latch including set, 
 ## Layout  
 The layout is designed to adhere to DRC constraints and optimized for compact area and minimal parasitics.
 
-![Layout](./Layout_and_schematic_match_SR_Latch_NAND.png)
+![Layout](./SR_Latch_using_NAND_Gate_Layout.png)
 
 ---
 
@@ -60,7 +60,7 @@ The layout is designed to adhere to DRC constraints and optimized for compact ar
 ### DRC: Design Rule Check  
 The layout passed all design rule checks.
 
-![DRC Clearance](./No_DRC_Erros.png)
+![DRC Clearance](./No_DRC_Errros.png)
 
 ### LVS: Layout vs Schematic  
 LVS confirms that the layout is electrically equivalent to the schematic.
