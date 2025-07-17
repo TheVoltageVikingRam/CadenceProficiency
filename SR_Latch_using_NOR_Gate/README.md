@@ -1,7 +1,6 @@
-
 # CMOS SR Latch Using NOR Gates in Cadence Virtuoso
 
-This repository presents the design and simulation of a **Set-Reset (SR) Latch** using **NOR gates** in **Cadence Virtuoso**, based on the **GPDK 90nm** CMOS technology. The project includes schematic creation, symbol view, testbench simulation, layout drawing, verification (DRC & LVS), parasitic extraction, and energy estimation.
+This repository contains the design and simulation of an **SR Latch using NOR gates** using **GPDK 90nm** technology in **Cadence Virtuoso**. It includes schematic design, symbol creation, testbench setup, transient simulation, custom layout, and verification steps like DRC, LVS, RCX, and energy estimation.
 
 ---
 
@@ -22,35 +21,35 @@ This repository presents the design and simulation of a **Set-Reset (SR) Latch**
 ---
 
 ## Schematic  
-The schematic of the SR Latch is constructed using two cross-coupled NOR gates.
+The SR latch is implemented using cross-coupled NOR gates, forming a basic memory element.
 
 ![Schematic](./SR_Latch_using_NOR_Schematic.png)
 
 ---
 
 ## Symbol View  
-A custom symbol view for the SR Latch enables easy hierarchical design integration.
+A simplified symbol was created to use in higher-level designs and testbenches.
 
 ![Symbol](./SR_Latch_using_NOR_Gates.png)
 
 ---
 
 ## Testbench  
-The testbench applies various combinations of Set (S) and Reset (R) inputs to verify latch behavior.
+The testbench applies input vectors to verify the functional behavior of the SR latch.
 
 ![Testbench](./SR_Latch_using_NOR_Tb.png)
 
 ---
 
 ## Transient Simulation  
-The transient response confirms the expected SR latch behavior under different input conditions.
+Simulation results show expected output behavior based on input combinations, confirming correct latch functionality.
 
-![Transient](./SR_Latch_using_NOR_Transient.png)
+![Transient Waveform](./SR_Latch_using_NOR_Transient_waveform.png)
 
 ---
 
 ## Layout  
-A compact layout of the SR Latch was created using standard layout techniques for 90nm CMOS.
+Custom layout was drawn using 90nm standard cell design rules in Cadence Virtuoso.
 
 ![Layout](./LAYOUT_SR_Latch_using_NOR.png)
 
@@ -59,49 +58,49 @@ A compact layout of the SR Latch was created using standard layout techniques fo
 ## DRC and LVS Checks
 
 ### DRC: Design Rule Check  
-The layout passed all design rule checks (DRC) successfully.
+No violations were found; layout is clean.
 
-![DRC Clearance](./NO_DRC_SR_LATCH_usimg_NOR.png)
+![DRC](./NO_DRC_SR_LATCH_usimg_NOR.png)
 
 ### LVS: Layout vs Schematic  
-LVS confirms the layout is electrically equivalent to the schematic.
+Schematic and layout netlists matched successfully.
 
-![LVS Run](./LVS_RUN_SR_Latch_using_NOR.png)
+![LVS](./LVS_RUN_SR_Latch_using_NOR.png)
 
 ---
 
 ## Schematic vs Layout Matching  
-Visual confirmation of schematic and layout netlist alignment.
+Shows correspondence between designed schematic and physical layout.
 
-![Match View](./Layout_and_schematic_match_SR_Latch_using_NOR_Gate.png)
+![Match](./Layout_and_schematic_match_SR_Latch_using_NOR_Gate.png)
 
 ---
 
 ## Parasitic Extraction (RCX)  
-Assura RCX was used to extract parasitic elements for accurate post-layout simulation.
+RCX extraction adds parasitic capacitance and resistance for post-layout simulation.
 
-![RCX Run](./RCX_Run_SR_Latch_using_NOR.png)
+![RCX](./RCX_Run_SR_Latch_using_NOR.png)
 
 ---
 
 ## AV Extracted View  
-The AV view includes parasitics, allowing accurate back-annotated simulation.
+The AV view represents the extracted design including parasitics.
 
 ![AV Extracted View](./AV_Extracted_view_SL_Latch_using_NOR.png)
 
 ---
 
 ## Energy Analysis  
-Post-layout simulation estimates the energy consumption per transition cycle in the **femtojoule (fJ)** range, reflecting a power-efficient latch design.
+Energy estimation performed for one complete cycle using post-layout data.
 
-![Energy Draw](./Energy_estimation_SR_Latch_using_NOR.png)
+![Energy](./Energy_estimation_SR_Latch_using_NOR.png)
 
 ---
 
 ## Tools Used  
-- **Cadence Virtuoso** – Schematic and Layout Design  
-- **Assura** – DRC, LVS, and RCX Parasitic Extraction  
-- **Spectre / ADE L/XL** – Transient Simulation and Energy Analysis  
+- **Cadence Virtuoso** with **GPDK 90nm**  
+- **Assura DRC/LVS/RCX**  
+- **Spectre ADE** for transient simulations
 
 ---
 
