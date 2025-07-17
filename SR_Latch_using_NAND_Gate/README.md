@@ -51,7 +51,7 @@ The transient simulation confirms correct operation of the latch including set, 
 ## Layout  
 The layout is designed to adhere to DRC constraints and optimized for compact area and minimal parasitics.
 
-![Layout](./SR_Latch_using_NAND_Gate_Layout.png)
+![Layout](./SR_Latch_using_NAND_Gate_Layout_waveform.png)
 
 ---
 
