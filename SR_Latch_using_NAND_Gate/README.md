@@ -1,6 +1,6 @@
-# CMOS SR Latch Implementation Using NAND Gates in Cadence Virtuoso
+# CMOS SR Latch Using NAND Gates in Cadence Virtuoso
 
-This repository presents the design, layout, simulation, and verification of an **SR Latch** implemented using **basic NAND gates** in **Cadence Virtuoso**, leveraging GPDK 90nm technology. The project includes schematic capture, symbol creation, transient simulation, DRC/LVS verification, parasitic extraction (RCX), and energy analysis.
+This repository contains the design and simulation of an **SR Latch using NAND gates** using **GPDK 90nm** technology in **Cadence Virtuoso**. It includes schematic, symbol creation, testbench setup, transient response analysis, physical layout, and backend verification such as DRC, LVS, RC extraction, and energy estimation.
 
 ---
 
@@ -21,86 +21,86 @@ This repository presents the design, layout, simulation, and verification of an 
 ---
 
 ## Schematic  
-The SR Latch is built using cross-coupled NAND gates. The latch operates with asynchronous Set (S) and Reset (R) inputs to store one bit of information.
+The latch is designed using cross-coupled NAND gates, forming the SR latch logic.
 
 ![Schematic](./SR_NAND_Schematic.png)
 
 ---
 
 ## Symbol View  
-A symbol for the SR latch was created to simplify testbench design and enable hierarchy in layout.
+A compact symbol view was created for hierarchy-based simulation and reuse.
 
 ![Symbol](./SR_using_NAND_symbol.png)
 
 ---
 
 ## Testbench  
-The testbench applies various Set and Reset inputs to validate latch behavior and stability.
+Testbench applies stimulus to S and R inputs to evaluate latch behavior.
 
 ![Testbench](./SR_Using_NAND_Tb.png)
 
 ---
 
 ## Transient Simulation  
-The transient simulation confirms correct operation of the latch including set, reset, and hold states.
+The waveform shows output Q and Q' toggling as per SR inputs with valid logic behavior.
 
-![Transient](./SR_Latch_using_NAND_Transient.png)
+![Transient Waveform](./SR_Latch_using_NAND_Transient_waveform.png)
 
 ---
 
 ## Layout  
-The layout is designed to adhere to DRC constraints and optimized for compact area and minimal parasitics.
+The full-custom layout is created using GPDK 90nm standard layers.
 
-![Layout](./SR_Latch_using_NAND_Gate_Layout_waveform.png)
+![Layout](./SR_Latch_using_NAND_Gate_Layout.png)
 
 ---
 
 ## DRC and LVS Checks
 
 ### DRC: Design Rule Check  
-The layout passed all design rule checks.
+The layout passed all design rules.
 
-![DRC Clearance](./No_DRC_Errros.png)
+![DRC](./No_DRC_Errros.png)
 
 ### LVS: Layout vs Schematic  
-LVS confirms that the layout is electrically equivalent to the schematic.
+LVS confirms electrical equivalence between layout and schematic.
 
-![LVS Run](./LVS_Run_SR_Latch_Using_NAND.png)
+![LVS](./LVS_Run_SR_Latch_Using_NAND.png)
 
 ---
 
 ## Schematic vs Layout Matching  
-A visual confirmation of layout vs schematic structural alignment.
+Visual confirmation of layout and schematic netlist alignment.
 
 ![Match View](./Layout_and_schematic_match_SR_Latch_NAND.png)
 
 ---
 
 ## Parasitic Extraction (RCX)  
-RCX extracts resistance and capacitance values from the layout for accurate post-layout simulation.
+Post-layout parasitic extraction using Assura RCX for accurate power and timing evaluation.
 
 ![RCX Run](./RCX_run_SR_Latch_Using_NAND.png)
 
 ---
 
 ## AV Extracted View  
-The AV view contains parasitics from the layout, used for back-annotated simulation.
+Extracted view showing parasitic-aware design layout.
 
-![AV Extracted View](./AV_extracted_view_SR_Latch_NAND.png)
+![AV Extracted](./AV_extracted_view_SR_Latch_NAND.png)
 
 ---
 
 ## Energy Analysis  
-The energy consumed per transition is estimated to be **within femtojoule range**, which aligns well with expected values for designs using GPDK 90nm technology. This efficiency makes it suitable for low-power latch-based storage or sequential logic systems.
+Energy consumption was estimated using back-annotated simulation. The latch demonstrates efficient power use in femtojoule range.
 
-![Energy Draw](./SR_Latch_Energy_Estimation.png)
+![Energy](./SR_Latch_Energy_Estimation.png)
 
 ---
 
 ## Tools Used  
-- **Cadence Virtuoso** – Schematic and Layout Design  
-- **Assura** – DRC, LVS, and RCX Extraction  
-- **Spectre / ADE L/XL** – Transient Simulation and Energy Estimation  
+- **Cadence Virtuoso** (GPDK 90nm)  
+- **Assura** for DRC/LVS/RCX  
+- **Spectre ADE** for simulation
 
 ---
 
