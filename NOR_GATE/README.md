@@ -51,7 +51,7 @@ Transient simulation confirms correct NOR logic behavior across all input states
 ## Layout  
 The NOR gate layout adheres to 90nm CMOS design rules and is optimized for area and performance.
 
-![Layout](./NOR_Gate_Layout.png) *(optional: update this if a named layout image is added separately)*
+![Layout](./Layout_NOR_Gate.png)
 
 ---
 
