@@ -1,4 +1,3 @@
-
 # CMOS Common Source Amplifier Design (GPDK 90nm)
 
 This repository documents the design and analysis of a **Common Source Amplifier** implemented using **Cadence Virtuoso** with **GPDK 90nm** technology. It includes schematic capture, layout design, simulation, DRC/LVS/RCX verification, and energy and power analysis.
@@ -7,16 +6,16 @@ This repository documents the design and analysis of a **Common Source Amplifier
 
 ## 📁 Contents
 
-- [Schematic](#schematic)
-- [Transient and DC Analysis](#transient-and-dc-analysis)
-- [Layout](#layout)
-- [DRC & LVS Verification](#drc--lvs-verification)
-- [Layout vs Schematic Matching](#layout-vs-schematic-matching)
-- [RC Extraction](#rc-extraction)
-- [AV Extracted View](#av-extracted-view)
-- [Energy and Power Analysis](#energy-and-power-analysis)
-- [Tools Used](#tools-used)
-- [Author](#author)
+- [Schematic](#-schematic)
+- [Transient and DC Analysis](#-transient-and-dc-analysis)
+- [Layout](#-layout)
+- [DRC & LVS Verification](#-drc--lvs-verification)
+- [Layout vs Schematic Matching](#-layout-vs-schematic-matching)
+- [RC Extraction](#-rc-extraction)
+- [AV Extracted View](#-av-extracted-view)
+- [Energy and Power Analysis](#-energy-and-power-analysis)
+- [Tools Used](#-tools-used)
+- [Author](#-author)
 
 ---
 
