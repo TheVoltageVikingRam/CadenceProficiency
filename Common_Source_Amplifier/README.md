@@ -1,127 +1,119 @@
-# 📘 Common Source Amplifier (CS Amp) – GPDK 90nm
+# Common Source Amplifier (CS Amp)
 
-This project demonstrates the design, layout, and analysis of a **Common Source Amplifier** using the **GPDK 90nm** technology in **Cadence Virtuoso**. The design includes schematic capture, layout, verification (DRC/LVS/RCX), and simulation (transient and DC), along with energy and power estimation.
-
----
-
-## 📂 Table of Contents
-
-- [1️⃣ Schematic](#1️⃣-schematic)
-- [2️⃣ Testbench](#2️⃣-testbench)
-- [3️⃣ Transient & DC Response](#3️⃣-transient--dc-response)
-- [4️⃣ Layout](#4️⃣-layout)
-- [5️⃣ DRC Check](#5️⃣-drc-check)
-- [6️⃣ LVS Verification](#6️⃣-lvs-verification)
-- [7️⃣ Layout vs Schematic Match](#7️⃣-layout-vs-schematic-match)
-- [8️⃣ RC Extraction (RCX)](#8️⃣-rc-extraction-rcx)
-- [9️⃣ AV Extracted View](#9️⃣-av-extracted-view)
-- [🔟 Energy and Power Estimation](#🔟-energy-and-power-estimation)
-- [🛠 Tools Used](#🛠-tools-used)
-- [👤 Author](#👤-author)
+This repository documents the design, layout, and analysis of a Common Source Amplifier implemented using Cadence Virtuoso. All essential verification stages — including schematic, layout, DRC, LVS, RC extraction, and simulation — are provided.
 
 ---
 
-## 1️⃣ Schematic
-
-Basic schematic of a common source amplifier using NMOS and passive load.
-
-![Schematic](./Common_source_amplifier_schematic.png)
-
----
-
-## 2️⃣ Testbench
-
-Simulation setup used to verify amplifier behavior.
-
-![Testbench](./CS_Amp_tb.png)
-
----
-
-## 3️⃣ Transient & DC Response
-
-### 📈 Transient Response
-
-Shows amplifier gain and performance with AC input.
-
-![Transient Response](./Transient_Response_CS_amp.png)
-
-### 🧾 DC Sweep
-
-Shows transfer characteristics and operating region.
-
-![DC Response](./dc_response.png)
+## 📑 Table of Contents
+- [1. Schematic](#1-schematic)
+- [2. Symbol](#2-symbol)
+- [3. Testbench](#3-testbench)
+- [4. Transient Response](#4-transient-response)
+- [5. DC Response](#5-dc-response)
+- [6. Layout](#6-layout)
+- [7. DRC Verification](#7-drc-verification)
+- [8. LVS Verification](#8-lvs-verification)
+- [9. Layout vs Schematic Match](#9-layout-vs-schematic-match)
+- [10. RC Extraction](#10-rc-extraction)
+- [11. AV Extracted View](#11-av-extracted-view)
+- [12. Power Curve](#12-power-curve)
+- [13. Energy Estimation](#13-energy-estimation)
 
 ---
 
-## 4️⃣ Layout
+## 1. Schematic
+The schematic of the Common Source Amplifier circuit.
 
-Physical design of the common source amplifier.
-
-![Layout](./Lyout_CS_Amp.png)
-
----
-
-## 5️⃣ DRC Check
-
-Design passes all physical design rules.
-
-![DRC](./No_DRC_CS_amp.png)
+![Schematic](Common_source_amplifier_schematic.png)
 
 ---
 
-## 6️⃣ LVS Verification
+## 2. Symbol
+The symbol used for the amplifier design.
 
-Layout successfully matches the schematic netlist.
-
-![LVS](./LVS_Run_CS_Amp.png)
-
----
-
-## 7️⃣ Layout vs Schematic Match
-
-Visual overlay confirming device and net matching.
-
-![Layout vs Schematic](./Layout_and_schematic_match_CS_amp.png)
+![Symbol](Common_source_amplifier.png)
 
 ---
 
-## 8️⃣ RC Extraction (RCX)
+## 3. Testbench
+The testbench used for transient and DC analysis.
 
-Parasitics extracted to analyze post-layout behavior.
-
-![RCX](./RCX_Run_CS_Amp.png)
-
----
-
-## 9️⃣ AV Extracted View
-
-Extracted view with parasitics for high-accuracy simulation.
-
-![AV Extracted](./AV_Extracted_view_CS_Amp.png)
+![Testbench](CS_Amp_tb.png)
 
 ---
 
+## 4. Transient Response
+Simulated transient response of the amplifier.
 
-### ⚡ Power Curve
-
-Time-dependent power profile during simulation.
-
-![Power Curve](./Power_Curve.png)
+![Transient](Transient_Response_CS_amp.png)
 
 ---
 
-## 🛠 Tools Used
+## 5. DC Response
+DC transfer characteristics of the CS amplifier.
 
-- **Cadence Virtuoso** (Schematic/Layout)
-- **Assura** (DRC, LVS, RCX)
-- **Spectre** (Simulation)
-- **Technology**: GPDK 90nm
+![DC Response](dc_response.png)
 
 ---
 
-## 👤 Author
+## 6. Layout
+Layout designed in Virtuoso Layout Suite.
 
-**Ram Tripathi**
+![Layout](Lyout_CS_Amp.png)
 
 ---
 
+## 7. DRC Verification
+Design Rule Check passed without errors.
+
+![DRC](No_DRC_CS_amp.png)
+
+---
+
+## 8. LVS Verification
+Layout versus Schematic comparison passed.
+
+![LVS](LVS_Run_CS_Amp.png)
+
+---
+
+## 9. Layout vs Schematic Match
+Graphical proof of schematic and layout match.
+
+![Match](Layout_and_schematic_match_CS_amp.png)
+
+---
+
+## 10. RC Extraction
+Resistor-Capacitor parasitic extraction run.
+
+![RCX](RCX_Run_CS_Amp.png)
+
+---
+
+## 11. AV Extracted View
+Post-layout AV extracted simulation view.
+
+![AV View](AV_Extracted_view_CS_Amp.png)
+
+---
+
+## 12. Power Curve
+Graph showing amplifier power consumption over time.
+
+![Power](Power_Curve.png)
+
+---
+
+## 13. Energy Estimation
+Plot showing energy estimation for one cycle or test window.
+
+![Energy](Energy_Estimation_CS_Amp.png)
+
+---
+
+### 📌 Summary
+
+This project showcases a fully verified analog amplifier design using the GPDK 90nm CMOS process. It includes complete simulation and physical design verification stages, serving as a reference for analog design workflows.
+
+---
