@@ -1,111 +1,124 @@
-# Common Source Amplifier (CS Amp)
+# 📘 Common Source Amplifier using GPDK 90nm
 
-This repository documents the design, layout, and analysis of a Common Source Amplifier implemented using Cadence Virtuoso. All essential verification stages — including schematic, layout, DRC, LVS, RC extraction, and simulation — are provided.
+This repository contains the complete schematic design, layout, verification, and energy analysis of a **Common Source Amplifier** implemented using the **GPDK 90nm** PDK in **Cadence Virtuoso**.
 
 ---
 
-## 📑 Table of Contents
-- [1. Schematic](#1-schematic)
-- [2. Symbol](#2-symbol)
-- [3. Testbench](#3-testbench)
-- [4. Transient Response](#4-transient-response)
-- [5. DC Response](#5-dc-response)
-- [6. Layout](#6-layout)
-- [7. DRC Verification](#7-drc-verification)
-- [8. LVS Verification](#8-lvs-verification)
-- [9. Layout vs Schematic Match](#9-layout-vs-schematic-match)
-- [10. RC Extraction](#10-rc-extraction)
-- [11. AV Extracted View](#11-av-extracted-view)
-- [12. Power Curve](#12-power-curve)
+## 📂 Table of Contents
+
+- [🔧 Schematic](#-schematic)
+- [📐 Symbol](#-symbol)
+- [🧪 Testbench](#-testbench)
+- [📊 Transient Response](#-transient-response)
+- [📈 DC Response](#-dc-response)
+- [🏗️ Layout](#-layout)
+- [✅ DRC Check](#-drc-check)
+- [🔍 LVS Check](#-lvs-check)
+- [🧩 Layout vs Schematic Match](#-layout-vs-schematic-match)
+- [🧠 RCX Extraction](#-rcx-extraction)
+- [📡 AV Extracted View](#-av-extracted-view)
+- [⚡ Power Curve](#-power-curve)
+
 ---
 
-## 1. Schematic
-The schematic of the Common Source Amplifier circuit.
+## 🔧 Schematic
+
+The schematic of the Common Source Amplifier designed in Cadence Virtuoso.
 
 ![Schematic](Common_source_amplifier_schematic.png)
 
 ---
 
-## 2. Symbol
-The symbol used for the amplifier design.
+## 📐 Symbol
+
+Symbol generated for the Common Source Amplifier.
 
 ![Symbol](Common_source_amplifier.png)
 
 ---
 
-## 3. Testbench
-The testbench used for transient and DC analysis.
+## 🧪 Testbench
+
+Testbench used to simulate the amplifier's transient and DC behavior.
 
 ![Testbench](CS_Amp_tb.png)
 
 ---
 
-## 4. Transient Response
-Simulated transient response of the amplifier.
+## 📊 Transient Response
 
-![Transient](Transient_Response_CS_amp.png)
+Transient simulation result showing output response over time.
+
+![Transient Response](Transient_Response_CS_amp.png)
 
 ---
 
-## 5. DC Response
-DC transfer characteristics of the CS amplifier.
+## 📈 DC Response
+
+DC sweep analysis to observe voltage gain characteristics.
 
 ![DC Response](dc_response.png)
 
 ---
 
-## 6. Layout
-Layout designed in Virtuoso Layout Suite.
+## 🏗️ Layout
+
+Layout of the Common Source Amplifier designed in Virtuoso Layout Editor.
 
 ![Layout](Lyout_CS_Amp.png)
 
 ---
 
-## 7. DRC Verification
-Design Rule Check passed without errors.
+## ✅ DRC Check
+
+Design Rule Check completed with no errors.
 
 ![DRC](No_DRC_CS_amp.png)
 
 ---
 
-## 8. LVS Verification
-Layout versus Schematic comparison passed.
+## 🔍 LVS Check
+
+Layout versus Schematic check passed successfully.
 
 ![LVS](LVS_Run_CS_Amp.png)
 
 ---
 
-## 9. Layout vs Schematic Match
-Graphical proof of schematic and layout match.
+## 🧩 Layout vs Schematic Match
+
+Layout matched correctly with the schematic.
 
 ![Match](Layout_and_schematic_match_CS_amp.png)
 
 ---
 
-## 10. RC Extraction
-Resistor-Capacitor parasitic extraction run.
+## 🧠 RCX Extraction
+
+RC parasitic extraction done successfully.
 
 ![RCX](RCX_Run_CS_Amp.png)
 
 ---
 
-## 11. AV Extracted View
-Post-layout AV extracted simulation view.
+## 📡 AV Extracted View
 
-![AV View](AV_Extracted_view_CS_Amp.png)
+Extracted view of the layout after parasitic extraction.
 
----
-
-## 12. Power Curve
-Graph showing amplifier power consumption over time.
-
-![Power](Power_Curve.png)
+![AV Extracted View](AV_Extracted_view_CS_Amp.png)
 
 ---
 
+## ⚡ Power Curve
 
-### 📌 Summary
+Plot showing the power variation characteristics.
 
-This project showcases a fully verified analog amplifier design using the GPDK 90nm CMOS process. It includes complete simulation and physical design verification stages, serving as a reference for analog design workflows.
+![Power Curve](Power_Curve.png)
+
 
 ---
+
+## 📌 Summary
+
+This project showcases the complete design and validation of a **Common Source Amplifier** in the GPDK 90nm technology. The design flow includes schematic capture, layout design, DRC/LVS checks, RC extraction, and transient/DC simulation.
+
