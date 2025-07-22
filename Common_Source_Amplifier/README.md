@@ -101,13 +101,6 @@ Extracted view with parasitics for high-accuracy simulation.
 
 ---
 
-## 🔟 Energy and Power Estimation
-
-### 🔋 Energy Estimation
-
-Energy consumed per cycle during operation.
-
-![Energy](./Energy_Estimation_CS_Amp.png)
 
 ### ⚡ Power Curve
 
