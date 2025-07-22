@@ -1,106 +1,117 @@
-# CMOS Common Source Amplifier Design (GPDK 90nm)
+# 📘 Common Source Amplifier (CS Amp) – GPDK 90nm
 
-This repository documents the design and analysis of a **Common Source Amplifier** implemented using **Cadence Virtuoso** with **GPDK 90nm** technology. It includes schematic capture, layout design, simulation, DRC/LVS/RCX verification, and energy and power analysis.
-
----
-
-## 📁 Contents
-
-- [Schematic](#-schematic)
-- [Transient and DC Analysis](#-transient-and-dc-analysis)
-- [Layout](#-layout)
-- [DRC & LVS Verification](#-drc--lvs-verification)
-- [Layout vs Schematic Matching](#-layout-vs-schematic-matching)
-- [RC Extraction](#-rc-extraction)
-- [AV Extracted View](#-av-extracted-view)
-- [Energy and Power Analysis](#-energy-and-power-analysis)
-- [Tools Used](#-tools-used)
-- [Author](#-author)
+This project demonstrates the design, layout, and analysis of a **Common Source Amplifier** using the **GPDK 90nm** technology in **Cadence Virtuoso**. The design includes schematic capture, layout, verification (DRC/LVS/RCX), and simulation (transient and DC), along with energy and power estimation.
 
 ---
 
-## 📐 Schematic
+## 📂 Table of Contents
 
-The amplifier is implemented using a single NMOS transistor with a resistive load and biasing configured for mid-band gain.
+- [1️⃣ Schematic](#1️⃣-schematic)
+- [2️⃣ Testbench](#2️⃣-testbench)
+- [3️⃣ Transient & DC Response](#3️⃣-transient--dc-response)
+- [4️⃣ Layout](#4️⃣-layout)
+- [5️⃣ DRC Check](#5️⃣-drc-check)
+- [6️⃣ LVS Verification](#6️⃣-lvs-verification)
+- [7️⃣ Layout vs Schematic Match](#7️⃣-layout-vs-schematic-match)
+- [8️⃣ RC Extraction (RCX)](#8️⃣-rc-extraction-rcx)
+- [9️⃣ AV Extracted View](#9️⃣-av-extracted-view)
+- [🔟 Energy and Power Estimation](#🔟-energy-and-power-estimation)
+- [🛠 Tools Used](#🛠-tools-used)
+- [👤 Author](#👤-author)
+
+---
+
+## 1️⃣ Schematic
+
+Basic schematic of a common source amplifier using NMOS and passive load.
 
 ![Schematic](./Common_source_amplifier_schematic.png)
 
 ---
 
-## 📊 Transient and DC Analysis
+## 2️⃣ Testbench
 
-### Transient Response
+Simulation setup used to verify amplifier behavior.
 
-Simulation confirms gain and signal amplification behavior.
+![Testbench](./CS_Amp_tb.png)
+
+---
+
+## 3️⃣ Transient & DC Response
+
+### 📈 Transient Response
+
+Shows amplifier gain and performance with AC input.
 
 ![Transient Response](./Transient_Response_CS_amp.png)
 
-### DC Transfer Characteristics
+### 🧾 DC Sweep
 
-DC sweep of input vs output highlights gain and operating point.
+Shows transfer characteristics and operating region.
 
 ![DC Response](./dc_response.png)
 
 ---
 
-## 🧱 Layout
+## 4️⃣ Layout
 
-Full layout created and verified using DRC and LVS tools.
+Physical design of the common source amplifier.
 
 ![Layout](./Lyout_CS_Amp.png)
 
 ---
 
-## ✅ DRC & LVS Verification
+## 5️⃣ DRC Check
 
-### DRC (Design Rule Check)  
-All physical design rules are satisfied.
+Design passes all physical design rules.
 
-![No DRC](./No_DRC_CS_amp.png)
+![DRC](./No_DRC_CS_amp.png)
 
-### LVS (Layout vs Schematic)
+---
 
-Confirms layout matches schematic netlist.
+## 6️⃣ LVS Verification
+
+Layout successfully matches the schematic netlist.
 
 ![LVS](./LVS_Run_CS_Amp.png)
 
 ---
 
-## 🧮 Layout vs Schematic Matching
+## 7️⃣ Layout vs Schematic Match
 
-Visual confirmation of layout and schematic net connectivity.
+Visual overlay confirming device and net matching.
 
-![Layout and Schematic Match](./Layout_and_schematic_match_CS_amp.png)
+![Layout vs Schematic](./Layout_and_schematic_match_CS_amp.png)
 
 ---
 
-## 📉 RC Extraction
+## 8️⃣ RC Extraction (RCX)
 
-Parasitic elements are extracted to refine post-layout simulation.
+Parasitics extracted to analyze post-layout behavior.
 
 ![RCX](./RCX_Run_CS_Amp.png)
 
 ---
 
-## 🧪 AV Extracted View
+## 9️⃣ AV Extracted View
 
-The extracted netlist includes parasitics for accurate signal and power estimation.
+Extracted view with parasitics for high-accuracy simulation.
 
-![AV Extracted View](./AV_Extracted_view_CS_Amp.png)
+![AV Extracted](./AV_Extracted_view_CS_Amp.png)
 
 ---
 
-## ⚡ Energy and Power Analysis
+## 🔟 Energy and Power Estimation
 
-### Energy Consumption Estimation
+### 🔋 Energy Estimation
 
-Estimated dynamic energy per input cycle.
+Energy consumed per cycle during operation.
 
-![Energy Estimation](./Energy_Estimation_CS_Amp.png)
+![Energy](./Energy_Estimation_CS_Amp.png)
 
-### Power Curve
+### ⚡ Power Curve
 
-Displays power variation over time or input.
+Time-dependent power profile during simulation.
 
 ![Power Curve](./Power_Curve.png)
 
@@ -108,13 +119,16 @@ Displays power variation over time or input.
 
 ## 🛠 Tools Used
 
-- **Cadence Virtuoso** (Schematic/Layout/Simulation)
-- **GPDK 90nm PDK**
-- **Spectre** (Transient and DC Analysis)
+- **Cadence Virtuoso** (Schematic/Layout)
 - **Assura** (DRC, LVS, RCX)
+- **Spectre** (Simulation)
+- **Technology**: GPDK 90nm
 
 ---
 
 ## 👤 Author
 
 **Ram Tripathi**
+
+---
+
