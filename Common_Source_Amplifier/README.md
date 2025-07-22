@@ -117,8 +117,15 @@ Plot showing the power variation characteristics.
 
 
 ---
+## Tools Used  
+- **Cadence Virtuoso** – Schematic, Symbol, and Layout Design  
+- **Spectre** – Transient Simulation  
+- **Assura** – DRC, LVS, RCX  
+- **ADE L** – Simulation & Energy Estimation
 
-## 📌 Summary
+---
 
-This project showcases the complete design and validation of a **Common Source Amplifier** in the GPDK 90nm technology. The design flow includes schematic capture, layout design, DRC/LVS checks, RC extraction, and transient/DC simulation.
+## Author  
+
+**Ram Tripathi**
 
