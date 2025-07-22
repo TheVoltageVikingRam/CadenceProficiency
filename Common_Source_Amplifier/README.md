@@ -17,8 +17,6 @@ This repository documents the design, layout, and analysis of a Common Source Am
 - [10. RC Extraction](#10-rc-extraction)
 - [11. AV Extracted View](#11-av-extracted-view)
 - [12. Power Curve](#12-power-curve)
-- [13. Energy Estimation](#13-energy-estimation)
-
 ---
 
 ## 1. Schematic
@@ -105,12 +103,6 @@ Graph showing amplifier power consumption over time.
 
 ---
 
-## 13. Energy Estimation
-Plot showing energy estimation for one cycle or test window.
-
-![Energy](Energy_Estimation_CS_Amp.png)
-
----
 
 ### 📌 Summary
 
