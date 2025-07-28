@@ -115,9 +115,5 @@ Extracted view of the Differential Amplifier after RCX.
 
 ![AV Extracted View](AV_Extraccted_view_Diff_Amplifier.png)
 
----
 
-## 📌 Summary
-
-This project demonstrates the complete analog design flow of a **Differential Amplifier** in **GPDK 90nm**. It includes schematic capture, symbol creation, layout design, DRC/LVS verification, AC/DC/transient simulation, and post-layout extraction.
 
