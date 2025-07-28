@@ -1,4 +1,3 @@
-
 # 📘 Differential Amplifier using GPDK 90nm
 
 This repository contains the complete schematic design, layout, verification, and performance analysis of a **Differential Amplifier** implemented using the **GPDK 90nm** PDK in **Cadence Virtuoso**.
@@ -80,4 +79,45 @@ Layout of the Differential Amplifier created in Virtuoso Layout Editor.
 
 ## ✅ DRC Check
 
-Design Rule Check completed successfully
+Design Rule Check completed successfully with no violations.
+
+![DRC](Diff_Amp_NO_DRC.png)
+
+---
+
+## 🔍 LVS Check
+
+Layout Versus Schematic (LVS) check passed.
+
+![LVS](LVS_Run_Diff_Amp.png)
+
+---
+
+## 🧩 Layout vs Schematic Match
+
+The layout and schematic are matched successfully.
+
+![Match](Layout_and_schematic_match__Diff_amp.png)
+
+---
+
+## 🧠 RCX Extraction
+
+RC parasitic extraction done for post-layout simulation.
+
+![RCX](RCX_Run_Diff_Amplifier.png)
+
+---
+
+## 📡 AV Extracted View
+
+Extracted view of the Differential Amplifier after RCX.
+
+![AV Extracted View](AV_Extraccted_view_Diff_Amplifier.png)
+
+---
+
+## 📌 Summary
+
+This project demonstrates the complete analog design flow of a **Differential Amplifier** in **GPDK 90nm**. It includes schematic capture, symbol creation, layout design, DRC/LVS verification, AC/DC/transient simulation, and post-layout extraction.
+
