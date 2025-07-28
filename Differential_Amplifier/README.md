@@ -18,6 +18,8 @@ This repository contains the complete schematic design, layout, verification, an
 - [🧩 Layout vs Schematic Match](#-layout-vs-schematic-match)
 - [🧠 RCX Extraction](#-rcx-extraction)
 - [📡 AV Extracted View](#-av-extracted-view)
+- [🛠️ Tools Used](#-tools-used)
+- [👨‍💻 Author](#-author)
 
 ---
 
@@ -115,5 +117,21 @@ Extracted view of the Differential Amplifier after RCX.
 
 ![AV Extracted View](AV_Extraccted_view_Diff_Amplifier.png)
 
+---
+
+## 🛠️ Tools Used
+
+- **Cadence Virtuoso** – Schematic, Layout, and Symbol design  
+- **GPDK 90nm PDK** – Process Design Kit  
+- **Spectre Simulator** – Transient, DC, and AC simulations  
+- **Assura/Calibre** – DRC and LVS checks  
+- **QRC/RCX** – Parasitic Extraction  
+- **Virtuoso Visualization Tools** – Waveform viewing and analysis  
+
+---
+
+## 👨‍💻 Author
+
+**Ram Tripathi**  
 
 
