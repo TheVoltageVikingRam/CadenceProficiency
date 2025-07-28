@@ -124,8 +124,8 @@ Extracted view of the Differential Amplifier after RCX.
 - **Cadence Virtuoso** – Schematic, Layout, and Symbol design  
 - **GPDK 90nm PDK** – Process Design Kit  
 - **Spectre Simulator** – Transient, DC, and AC simulations  
-- **Assura/Calibre** – DRC and LVS checks  
-- **QRC/RCX** – Parasitic Extraction  
+- **Assura** – DRC and LVS checks  
+- **RCX** – Parasitic Extraction  
 - **Virtuoso Visualization Tools** – Waveform viewing and analysis  
 
 ---
