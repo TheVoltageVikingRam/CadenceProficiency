@@ -1,7 +1,6 @@
-
 # 🔀 Transmission Gate using GPDK 90nm
 
-This repository showcases the complete analog design flow of a **Transmission Gate** implemented using **Cadence Virtuoso** with the **GPDK 90nm** technology. The project includes schematic capture, layout, simulations, verification, and power analysis.
+This repository showcases the complete analog design flow of a **Transmission Gate**, implemented using **Cadence Virtuoso** with the **GPDK 90nm** technology. It includes schematic design, layout, simulation, verification, and energy analysis.
 
 ---
 
@@ -9,6 +8,7 @@ This repository showcases the complete analog design flow of a **Transmission Ga
 
 - [🧰 Schematic](#-schematic)
 - [📐 Symbol](#-symbol)
+- [🧪 Testbench](#-testbench)
 - [📊 Transient Response](#-transient-response)
 - [⚡ Spectral Power Analysis](#-spectral-power-analysis)
 - [🔋 Energy Estimation](#-energy-estimation)
@@ -25,7 +25,7 @@ This repository showcases the complete analog design flow of a **Transmission Ga
 
 ## 🧰 Schematic
 
-The schematic of the Transmission Gate circuit drawn in Virtuoso.
+Schematic of the Transmission Gate drawn in Cadence Virtuoso.
 
 ![Schematic](Transmission_Gate_Schematic.png)
 
@@ -33,23 +33,31 @@ The schematic of the Transmission Gate circuit drawn in Virtuoso.
 
 ## 📐 Symbol
 
-The symbol created for hierarchical design and testbench connections.
+Hierarchical symbol created for simulation testbench connectivity.
 
 ![Symbol](Transmission_gate_symbol.png)
 
 ---
 
+## 🧪 Testbench
+
+Testbench circuit used for transient and power simulations.
+
+![Testbench](Transmission_gate_tb.png)
+
+---
+
 ## 📊 Transient Response
 
-Transient waveform showing the switching characteristics of the transmission gate.
+Transient simulation showing gate functionality over time.
 
-![Transient Response](Transmission_Gate_transient_waveform.png)
+![Transient](Transmission_Gate_transient_waveform.png)
 
 ---
 
 ## ⚡ Spectral Power Analysis
 
-Power waveform captured using Virtuoso's waveform viewer.
+Power waveform from simulation, showing dynamic power consumption.
 
 ![Spectral Power](Transmission_gate_spectral_power.png)
 
@@ -57,7 +65,7 @@ Power waveform captured using Virtuoso's waveform viewer.
 
 ## 🔋 Energy Estimation
 
-Estimated energy consumed during operation of the transmission gate.
+Calculated energy usage based on simulation data.
 
 ![Energy Estimation](Energy_Estimation_transmission_gate.png)
 
@@ -65,7 +73,7 @@ Estimated energy consumed during operation of the transmission gate.
 
 ## 🏗️ Layout
 
-Full-custom layout of the Transmission Gate in compliance with 90nm design rules.
+Full-custom layout designed for DRC compliance.
 
 ![Layout](Layout_Transmission_Gate.png)
 
@@ -73,15 +81,15 @@ Full-custom layout of the Transmission Gate in compliance with 90nm design rules
 
 ## ✅ DRC Check
 
-Design Rule Check passed successfully with no errors.
+Design Rule Check passed without errors.
 
-![DRC](No_DRC_Transmission_Gate.png)
+![No DRC](No_DRC_Transmission_Gate.png)
 
 ---
 
 ## 🔍 LVS Check
 
-Layout Versus Schematic (LVS) verified and passed.
+Layout Versus Schematic verified and matched.
 
 ![LVS](LVS_Run_Transmission_gate.png)
 
@@ -89,15 +97,15 @@ Layout Versus Schematic (LVS) verified and passed.
 
 ## 🧩 Layout vs Schematic Match
 
-Confirmation of matching connectivity between layout and schematic.
+Visual confirmation of matching layout and schematic.
 
-![Match](Layout_and_schematic_match_transmission_gate.png)
+![Layout Match](Layout_and_schematic_match_transmission_gate.png)
 
 ---
 
 ## 🧠 RCX Extraction
 
-Post-layout RC extraction for accurate simulation.
+Parasitic RC extraction using post-layout view.
 
 ![RCX](RCX_Run_transmission_gate.png)
 
@@ -105,7 +113,7 @@ Post-layout RC extraction for accurate simulation.
 
 ## 📡 AV Extracted View
 
-Annotated view showing extracted parasitics for simulation.
+Annotated view for simulation with extracted parasitics.
 
 ![AV View](AV_Extracted_view_tranmission_gate.png)
 
@@ -113,15 +121,18 @@ Annotated view showing extracted parasitics for simulation.
 
 ## 🛠️ Tools Used
 
-- **Cadence Virtuoso** – Schematic & Layout Design  
-- **Spectre Simulator** – Transient, power, and energy simulations  
-- **Assura** – DRC and LVS verification  
-- **RCX** – Parasitic Extraction  
-- **GPDK 90nm** – Technology library  
+- **Cadence Virtuoso** – Schematic, Layout & Simulation  
+- **Spectre** – Transient and Power Simulations  
+- **Assura/Calibre** – DRC & LVS  
+- **QRC/RCX** – Parasitic Extraction  
+- **GPDK 90nm** – Technology Library  
 
 ---
 
 ## 👨‍💻 Author
 
 **Ram Tripathi**  
+B.Tech – Electronics and Communication Engineering  
+Analog IC Design Enthusiast
 
+---
