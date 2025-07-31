@@ -124,8 +124,8 @@ View of the extracted netlist including parasitics for accurate post-layout simu
 
 - **Cadence Virtuoso** – Schematic & Layout Design  
 - **Spectre Simulator** – Transient, power, and energy simulations  
-- **Assura/Calibre** – DRC and LVS verification  
-- **QRC/RCX** – RC Extraction  
+- **Assura** – DRC and LVS verification  
+- **RCX** – RC Extraction  
 - **Virtuoso Waveform Viewer** – Signal and power plotting  
 - **GPDK 90nm** – Process Design Kit  
 
@@ -134,8 +134,5 @@ View of the extracted netlist including parasitics for accurate post-layout simu
 ## 👨‍💻 Author
 
 **Ram Tripathi**  
-B.Tech, Electronics and Communication Engineering  
-Analog & Mixed-Signal IC Design Enthusiast
 
----
 
