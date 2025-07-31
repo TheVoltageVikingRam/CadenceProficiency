@@ -132,7 +132,5 @@ Annotated view for simulation with extracted parasitics.
 ## 👨‍💻 Author
 
 **Ram Tripathi**  
-B.Tech – Electronics and Communication Engineering  
-Analog IC Design Enthusiast
 
 ---
