@@ -128,8 +128,6 @@ Butterfly curves confirm adequate **noise margins** for reliable data retention 
 - **Cadence Virtuoso** - Schematic and layout design
 - **Assura/PVS** - DRC and LVS verification
 - **Spectre** - Circuit simulation and analysis
-- **Quantus QRC** - Parasitic extraction
-
 ---
 
 ## Technology
