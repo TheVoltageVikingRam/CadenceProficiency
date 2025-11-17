@@ -85,10 +85,10 @@ Layout vs Schematic (LVS) verification and transient comparison.
 ## Tools Used
 - Cadence Virtuoso — schematic & layout
 - Spectre — simulations
-- Assura (or your DRC/LVS tool) — DRC & LVS checks
+- Assura — DRC & LVS checks
 
 ---
 
 ## Author
-**Ram Tripathi (22HEL2231)**  
-BSc (Hons.) Electronics — Final Year Project
+**Ram Tripathi**  
+
