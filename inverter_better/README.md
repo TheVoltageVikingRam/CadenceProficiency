@@ -91,7 +91,7 @@ This input inverter follows proper **full-custom VLSI design principles**, with 
 <summary><strong>Transistor Sizing Strategy</strong></summary>
 
 ### NMOS and PMOS Sizing
-- PMOS width is typically **2-3× NMOS width** to compensate for lower hole mobility
+- PMOS width is kept **1.5× NMOS width** to compensate for lower hole mobility
 - Balanced sizing ensures symmetric rise and fall times
 - Proper sizing provides:
   - Equal propagation delays (tpLH ≈ tpHL)
